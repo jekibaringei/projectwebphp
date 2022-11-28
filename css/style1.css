@@ -6,8 +6,8 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
-
 /* navbar style */
 header {
   height: 90px;
@@ -86,43 +86,36 @@ a.aj_btn:hover {
   cursor: pointer;
 }
 /* end navbar responsive */
-
-/* grid css */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
-  align-items: stretch;
+.tambah {
+  border-radius: 15px;
+  height: 40px;
+  width: 120px;
+  padding: 5px;
+  z-index: 1;
+  border: 1px solid #ffffff;
+  background: #391e46;
+  margin-left: 110px;
+  margin-top: 150px;
+  color: #ffffff;
 }
-.grid img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  max-width: 100%;
+.tambah:hover {
+  background: #030423;
+  transform: scale(1.02);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
 }
-/* end grid css */
+.tambah a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
 
+/* css animation */
 .wrapper {
   height: 100%;
   width: 100%;
   background: linear-gradient(180deg, #04fafd, 5%, #119dff, 50%, #030423);
-  position: relative;
+  position: absolute;
 }
-.wrapper .container1 {
-  position: relative;
-  width: 85%;
-  margin: auto;
-}
-.container1 h1 {
-  color: #fff;
-  font-size: 40px;
-  padding-top: 20px;
-}
-.container1 .main-pic {
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-/* css animation */
 .wrapper div {
   height: 60px;
   width: 60px;
@@ -228,11 +221,68 @@ div .dot {
 
 /* end css animation */
 
-/* footer style */
+table {
+  color: #ffffff;
+  margin-left: 50%;
+  margin-top: 170px;
+  transform: translate(-50%, -50%);
+  border-collapse: collapse;
+  width: 85%;
+  border: 1px solid #bdc3c7;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-/* end footer style */
+tr {
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
 
-/* mobile responsive */
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#header {
+  background-color: #391e46;
+  color: #fff;
+}
+
+tr:hover {
+  background-color: #030423;
+  transform: scale(1.02);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+.edit {
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ffffff;
+  background: #19a914;
+}
+.hapus {
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ffffff;
+  background: #e32a0d;
+}
+.edit:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+.hapus:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+a {
+  color: #ffffff;
+  font-size: 15px;
+}
 @media screen and (max-width: 900px) {
   .menu-toggle-btn {
     display: block !important;
@@ -248,7 +298,7 @@ div .dot {
     display: none;
     padding: 20px 40px;
     box-sizing: border-box;
-    z-index: 1;
+    z-index: 2;
   }
 
   .navigation-menu::before {
@@ -269,14 +319,21 @@ div .dot {
   .navigation-menu.active {
     display: block;
   }
-  .container1 h1 {
-    font-size: 25px;
+  .tambah {
+    top: 7%;
+    left: 5%;
   }
-  .container1 .main-pic {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  table {
+    width: 90%;
+    top: 30%;
   }
 }
-
-/* end mobile responsive */
+@media screen and (max-width: 768px) {
+  table {
+    top: 45%;
+    width: 50%;
+  }
+  .tambah {
+    left: 2%;
+  }
+}
