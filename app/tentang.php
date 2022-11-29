@@ -27,7 +27,7 @@
     <!-- For animation -->
     <div class="wrapper">
       <img src="../img/gambar1.jpg" alt="" width="600" style="margin:100px auto 50px; margin-left:30%; border:2px solid white;">
-      <section class="container" style="width:80%; margin:auto;"> 
+      <section class="container" style="width:80%; margin-left:10%;"> 
           <p style="font-size:25px; color:#ffffff;">Warung Faldi adalah warung makan milik Bapak Ifriadi dan Ibu Mariana yang berdiri sejak tahun 2019. Warung ini buka mulai jam 8 pagi hingga jam 3 sore. Warung Fadli berlokasi di Jl. George Obos Induk di depan Alfamart disamping kampus STMIK Palangkaraya. Warung Fadli menyediakan berbagai macam aneka makanan dan minuman seperti nasi kuning, nasi sop, soto ayam, teh es/hangat, kopi panas dan lain lain.</p>
       </section>
       <div><span class="dot"></span></div>
